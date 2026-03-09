@@ -1,0 +1,527 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Módulo 3 - Fundamentos de Programación Web</title>
+
+    <meta
+      name="description"
+      content="Módulo 3: Tecnologías web fundamentales. Aprende HTTP, HTML, CSS, Bootstrap y JavaScript."
+    />
+    <meta name="theme-color" content="#003366" />
+    <meta property="og:title" content="Módulo 3 - Células Plenum" />
+    <meta
+      property="og:description"
+      content="Aprende sobre desarrollo web estático y dinámico con HTML, CSS y JS."
+    />
+    <meta property="og:image" content="img/logo.de52c6b55577.png" />
+
+    <link rel="icon" href="img/favicon.png" />
+
+    <link rel="stylesheet" href="css/custom.css" />
+  </head>
+  <body class="bg-light">
+    <div class="container py-4">
+      <header
+        class="d-flex flex-column flex-md-row justify-content-between align-items-center pb-3 mb-4 border-bottom"
+      >
+        <a href="index.html" class="text-decoration-none">
+          <img
+            src="img/logo.de52c6b55577.png"
+            alt="Células Plenum"
+            height="80"
+            class="mb-3 mb-md-0 rounded"
+          />
+        </a>
+
+        <div class="text-center">
+          <h1 class="fw-bold fs-2 mb-1 text-primary">
+            Módulo 3. Fundamentos de Programación Web
+          </h1>
+        </div>
+
+        <div class="d-flex gap-3 mt-3 mt-md-0">
+          <img
+            src="img/Tecnologico_Nacional_de_Mexico.webp"
+            alt="TecNM"
+            height="80"
+            class="rounded shadow-sm"
+          />
+          <img
+            src="img/itssy.jpg"
+            alt="ITSSY"
+            height="80"
+            class="rounded shadow-sm"
+          />
+        </div>
+      </header>
+
+      <nav
+        class="nav nav-pills justify-content-center sticky-top bg-white bg-opacity-75 shadow-sm py-3 mb-5 rounded"
+        style="backdrop-filter: blur(10px); z-index: 1020"
+      >
+        <a class="nav-link active shadow-sm ms-2" href="modulo2.html" style="background-color: #003366"
+          >&larr; Anterior: Módulo 2</a
+        >
+        <a class="nav-link text-dark fw-semibold" href="index.html"
+          >🏠 Inicio</a
+        >
+        <a class="nav-link text-dark" href="#tema3-1">3.1 HTTP</a>
+        <a class="nav-link text-dark" href="#tema3-2">3.2 HTML</a>
+        <a class="nav-link text-dark" href="#tema3-3">3.3 CSS</a>
+        <a class="nav-link text-dark" href="#tema3-4">3.4 Bootstrap</a>
+        <a class="nav-link text-dark" href="#tema3-5">3.5 JS</a>
+      </nav>
+
+      <main>
+        <div class="accordion shadow-sm" id="accordionModulo3">
+          <div class="accordion-item border-primary" id="tema3-1">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button fs-5 fw-bold text-primary"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse3_1"
+                aria-expanded="true"
+              >
+                ☑ Tema 3.1. HTTP
+              </button>
+            </h2>
+            <div
+              id="collapse3_1"
+              class="accordion-collapse collapse show"
+              data-bs-parent="#accordionModulo3"
+            >
+              <div class="accordion-body p-4 bg-white">
+                <p class="fs-6 text-secondary">
+                  HTTP (HyperText Transfer Protocol) es el protocolo de
+                  comunicación base de la World Wide Web. Define cómo los
+                  mensajes son formateados y transmitidos entre un cliente
+                  (navegador) y un servidor web.
+                </p>
+
+                <div class="bg-dark text-light p-4 rounded shadow-sm mb-4">
+                  <h5 class="text-warning fw-bold mb-3">
+                    Métodos HTTP principales:
+                  </h5>
+                  <dl class="row mb-0">
+                    <dt class="col-sm-2 text-warning">GET</dt>
+                    <dd class="col-sm-10">
+                      Solicitar datos del servidor (solo lectura).
+                    </dd>
+                    <dt class="col-sm-2 text-warning">POST</dt>
+                    <dd class="col-sm-10">
+                      Enviar datos al servidor para crear un nuevo recurso.
+                    </dd>
+                    <dt class="col-sm-2 text-warning">PUT</dt>
+                    <dd class="col-sm-10">
+                      Actualizar un recurso existente por completo.
+                    </dd>
+                    <dt class="col-sm-2 text-warning">DELETE</dt>
+                    <dd class="col-sm-10">Eliminar un recurso del servidor.</dd>
+                  </dl>
+                </div>
+
+                <h4 class="text-primary mt-4 mb-3 fs-5 fw-bold">
+                  Material Audiovisual:
+                </h4>
+                <div
+                  class="ratio ratio-16x9 shadow-sm rounded overflow-hidden mb-4"
+                >
+                  <iframe
+                    src="https://www.youtube.com/embed/9J1nJOivdyw"
+                    title="Video Principal Tema 3.1"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+
+                <div class="alert alert-secondary shadow-sm">
+                  <h5 class="alert-heading fw-bold text-primary">
+                    🔗 Material Adicional:
+                  </h5>
+                  <ul class="mb-0">
+                    <li>
+                      <a
+                        href="AQUI_TU_SEGUNDO_LINK_3_1"
+                        target="_blank"
+                        class="alert-link"
+                        >Acceder al material adicional 1</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+
+                <h4 class="text-primary mt-4 mb-3 fs-5 fw-bold">
+                  Documento de Lectura:
+                </h4>
+                <iframe
+                  src="Documentos/3.1_HTTP_Emmanuel_Cetina.pdf"
+                  class="w-100 rounded shadow-sm border-0 mb-4"
+                  style="height: 500px"
+                ></iframe>
+
+                <div class="text-center">
+                  <a
+                    href="Documentos/3.1_HTTP_Emmanuel_Cetina.pdf"
+                    class="btn btn-outline-primary fw-bold px-4 py-2"
+                    download
+                    >💾 Descargar PDF: Protocolo HTTP</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item border-primary" id="tema3-2">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed fs-5 fw-bold text-primary"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse3_2"
+              >
+                ☑ Tema 3.2. HTML
+              </button>
+            </h2>
+            <div
+              id="collapse3_2"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionModulo3"
+            >
+              <div class="accordion-body p-4 bg-white">
+                <p class="fs-6 text-secondary">
+                  HTML (HyperText Markup Language) es el lenguaje de marcado
+                  estándar para la creación de páginas web. Proporciona la
+                  estructura semántica del contenido, utilizando etiquetas para
+                  diferenciar entre encabezados, párrafos, enlaces y contenido
+                  multimedia.
+                </p>
+
+                <h4 class="text-primary mt-4 mb-3 fs-5 fw-bold">
+                  Estructura Básica HTML5:
+                </h4>
+                <div
+                  class="bg-dark text-light p-3 rounded shadow-sm overflow-auto mb-4"
+                  style="font-family: monospace; font-size: 0.95rem"
+                >
+                  <pre class="m-0"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="es"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Mi primera página&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Hola Mundo&lt;/h1&gt;
+    &lt;p&gt;Este es mi primer párrafo.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                </div>
+
+                <h4 class="text-primary mt-4 mb-3 fs-5 fw-bold">
+                  Material Audiovisual:
+                </h4>
+                <div
+                  class="ratio ratio-16x9 shadow-sm rounded overflow-hidden mb-4"
+                >
+                  <iframe
+                    src="https://www.youtube.com/embed/sIO8kb5b6D0"
+                    title="Video Principal Tema 3.2"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+
+                <div class="alert alert-secondary shadow-sm">
+                  <h5 class="alert-heading fw-bold text-primary">
+                    🔗 Recursos Oficiales:
+                  </h5>
+                  <ul class="mb-0">
+                    <li>
+                      <a
+                        href="https://html.spec.whatwg.org/"
+                        target="_blank"
+                        class="alert-link"
+                        >🌐 Estándar oficial HTML (WHATWG)</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://developer.mozilla.org/es/docs/Web/HTML"
+                        target="_blank"
+                        class="alert-link"
+                        >🌐 Documentación MDN Web Docs</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+
+                <h4 class="text-primary mt-4 mb-3 fs-5 fw-bold">
+                  Documento de Lectura:
+                </h4>
+                <iframe
+                  src="Documentos/Laboratorio del Tema 3.2_Emmanuel Cetina.pdf"
+                  class="w-100 rounded shadow-sm border-0 mb-4"
+                  style="height: 500px"
+                ></iframe>
+
+                <div class="text-center">
+                  <a
+                    href="Documentos/Laboratorio del Tema 3.2_Emmanuel Cetina.pdf"
+                    class="btn btn-outline-primary fw-bold px-4 py-2"
+                    download
+                    >💾 Descargar PDF: Fundamentos HTML5</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item border-primary" id="tema3-3">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed fs-5 fw-bold text-primary"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse3_3"
+              >
+                ☑ Tema 3.3. CSS
+              </button>
+            </h2>
+            <div
+              id="collapse3_3"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionModulo3"
+            >
+              <div class="accordion-body p-4 bg-white">
+                <p class="fs-6 text-secondary">
+                  CSS (Cascading Style Sheets) es el lenguaje utilizado para
+                  describir la presentación visual de los documentos HTML.
+                  Permite separar el contenido de la apariencia, controlando
+                  colores, tipografías, márgenes y la adaptación del diseño a
+                  múltiples resoluciones de pantalla (Diseño Responsivo).
+                </p>
+
+                <h4 class="text-primary mt-4 mb-3 fs-5 fw-bold">
+                  Material Audiovisual:
+                </h4>
+                <div
+                  class="ratio ratio-16x9 shadow-sm rounded overflow-hidden mb-4"
+                >
+                  <iframe
+                    src="https://www.youtube.com/embed/K3xmRF8ab1o"
+                    title="Video Principal Tema 3.3"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+
+                <div class="alert alert-secondary shadow-sm">
+                  <h5 class="alert-heading fw-bold text-primary">
+                    🔗 Recursos Oficiales:
+                  </h5>
+                  <ul class="mb-0">
+                    <li>
+                      <a
+                        href="https://www.youtube.com/watch?v=7aAsXtFzNH8"
+                        target="_blank"
+                        class="alert-link"
+                        >🌐 Video oficial del curso</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.youtube.com/watch?v=N7p3OMM1wII"
+                        target="_blank"
+                        class="alert-link"
+                        >🌐 Video oficial del curso</a
+                      >
+                    </li>
+
+                    <li>
+                      <a
+                        href="https://www.youtube.com/watch?v=9zBsdzdE4sM"
+                        target="_blank"
+                        class="alert-link"
+                        >🌐 Video oficial del curso</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.youtube.com/watch?v=jx5jmI0UlXU"
+                        target="_blank"
+                        class="alert-link"
+                        >🌐 Video oficial del curso</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+
+                <h4 class="text-primary mt-4 mb-3 fs-5 fw-bold">
+                  Documento de Lectura:
+                </h4>
+                <iframe
+                  src="Documentos/Laboratorio Tema 3.3_Emmanuel Cetina.pdf"
+                  class="w-100 rounded shadow-sm border-0 mb-4"
+                  style="height: 500px"
+                ></iframe>
+
+                <div class="text-center">
+                  <a
+                    href="Documentos/Laboratorio Tema 3.3_Emmanuel Cetina.pdf"
+                    class="btn btn-outline-primary fw-bold px-4 py-2"
+                    download
+                    >💾 Descargar PDF: Estilos y CSS</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item border-primary" id="tema3-4">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed fs-5 fw-bold text-primary"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse3_4"
+              >
+                ☑ Tema 3.4. Bootstrap
+              </button>
+            </h2>
+            <div
+              id="collapse3_4"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionModulo3"
+            >
+              <div class="accordion-body p-4 bg-white">
+                <p class="fs-6 text-secondary">
+                  Bootstrap es un robusto framework de frontend que agiliza el
+                  desarrollo web. Proporciona una colección de clases CSS
+                  predefinidas, componentes interactivos y un poderoso sistema
+                  de grillas (Grid System) que facilita la creación de
+                  interfaces de usuario consistentes y adaptables a móviles.
+                </p>
+
+                <h4 class="text-primary mt-4 mb-3 fs-5 fw-bold">
+                  Material Audiovisual:
+                </h4>
+                <div
+                  class="ratio ratio-16x9 shadow-sm rounded overflow-hidden mb-4"
+                >
+                  <iframe
+                    src="AQUI_TU_PRIMER_LINK_EMBEBIDO_3_4"
+                    title="Video Principal Tema 3.4"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+
+                <h4 class="text-primary mt-4 mb-3 fs-5 fw-bold">
+                  Documento de Lectura:
+                </h4>
+                <iframe
+                  src="Documentos/3.4_Bootstrap_Emmanuel_Cetina.pdf"
+                  class="w-100 rounded shadow-sm border-0 mb-4"
+                  style="height: 500px"
+                ></iframe>
+
+                <div class="text-center">
+                  <a
+                    href="Documentos/3.4_Bootstrap_Emmanuel_Cetina.pdf"
+                    class="btn btn-outline-primary fw-bold px-4 py-2"
+                    download
+                    >💾 Descargar PDF: Maquetación con Bootstrap</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item border-primary" id="tema3-5">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed fs-5 fw-bold text-primary"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse3_5"
+              >
+                ☑ Tema 3.5. JavaScript
+              </button>
+            </h2>
+            <div
+              id="collapse3_5"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionModulo3"
+            >
+              <div class="accordion-body p-4 bg-white">
+                <p class="fs-6 text-secondary">
+                  JavaScript es el lenguaje de programación esencial que dota de
+                  interactividad y dinamismo a las páginas web. Desde la
+                  manipulación del Document Object Model (DOM) hasta la
+                  comunicación asíncrona con el servidor, JS es el núcleo del
+                  ecosistema frontend moderno.
+                </p>
+
+                <h4 class="text-primary mt-4 mb-3 fs-5 fw-bold">
+                  Material Audiovisual:
+                </h4>
+                <div
+                  class="ratio ratio-16x9 shadow-sm rounded overflow-hidden mb-4"
+                >
+                  <iframe
+                    src="AQUI_TU_PRIMER_LINK_EMBEBIDO_3_5"
+                    title="Video Principal Tema 3.5"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+
+                <h4 class="text-primary mt-4 mb-3 fs-5 fw-bold">
+                  Documento de Lectura:
+                </h4>
+                <iframe
+                  src="Documentos/3.5_JavaScript_Emmanuel_Cetina.pdf"
+                  class="w-100 rounded shadow-sm border-0 mb-4"
+                  style="height: 500px"
+                ></iframe>
+
+                <div class="text-center">
+                  <a
+                    href="Documentos/3.5_JavaScript_Emmanuel_Cetina.pdf"
+                    class="btn btn-outline-primary fw-bold px-4 py-2"
+                    download
+                    >💾 Descargar PDF: Dinamismo con JavaScript</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer class="pt-4 my-md-5 pt-md-5 border-top text-center">
+        <div class="mb-3">
+          <h3 class="fw-bold text-primary">
+            Programa Células Plenum - Módulo 3
+          </h3>
+          <p class="fw-semibold text-dark">
+            Plenumsoft Academy | Tecnológico Nacional de México
+          </p>
+        </div>
+        <p class="text-muted small">
+          &copy; 2026 Todos los derechos reservados
+        </p>
+      </footer>
+    </div>
+
+    <a
+      href="#"
+      class="scroll-top-btn shadow-lg d-flex justify-content-center align-items-center text-decoration-none"
+      aria-label="Ir al inicio de la página"
+      >⬆️</a
+    >
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

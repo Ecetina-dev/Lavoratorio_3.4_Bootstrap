@@ -1,0 +1,451 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Módulo 1 - Inducción al Programa Células Plenum</title>
+
+    <meta
+      name="description"
+      content="Módulo 1: Visión general del proceso de ingeniería de software, requerimientos, arquitectura y patrones de diseño."
+    />
+    <meta name="theme-color" content="#003366" />
+    <meta property="og:title" content="Módulo 1 - Células Plenum" />
+    <meta
+      property="og:description"
+      content="Aprende sobre Ingeniería de Software, Arquitectura y Patrones de Diseño."
+    />
+    <meta property="og:image" content="img/logo.de52c6b55577.png" />
+
+    <link rel="icon" href="img/favicon.png" />
+
+    <link rel="stylesheet" href="css/custom.css" />
+  </head>
+  <body class="bg-light">
+    <div class="container py-4">
+      <header
+        class="d-flex flex-column flex-md-row justify-content-between align-items-center pb-3 mb-4 border-bottom"
+      >
+        <a href="index.html" class="text-decoration-none">
+          <img
+            src="img/logo.de52c6b55577.png"
+            alt="Células Plenum"
+            height="80"
+            class="mb-3 mb-md-0 rounded"
+          />
+        </a>
+
+        <div class="text-center">
+          <h1 class="fw-bold fs-2 mb-1 text-primary">
+            Módulo 1. Inducción al Programa
+          </h1>
+        </div>
+
+        <div class="d-flex gap-3 mt-3 mt-md-0">
+          <img
+            src="img/Tecnologico_Nacional_de_Mexico.webp"
+            alt="TecNM"
+            height="80"
+            class="rounded shadow-sm"
+          />
+          <img
+            src="img/itssy.jpg"
+            alt="ITSSY"
+            height="80"
+            class="rounded shadow-sm"
+          />
+        </div>
+      </header>
+
+      <nav
+        class="nav nav-pills justify-content-center sticky-top bg-white bg-opacity-75 shadow-sm py-3 mb-5 rounded"
+        style="backdrop-filter: blur(10px); z-index: 1020"
+      >
+        <a class="nav-link text-dark fw-semibold" href="index.html"
+          >🏠 Inicio</a
+        >
+        <a class="nav-link text-dark" href="#tema1-1">1.1 Software</a>
+        <a class="nav-link text-dark" href="#tema1-2">1.2 Requerimientos</a>
+        <a class="nav-link text-dark" href="#tema1-3">1.3 Arquitectura</a>
+        <a class="nav-link text-dark" href="#tema1-4">1.4 Patrones</a>
+        <a
+          class="nav-link active shadow-sm ms-2"
+          href="modulo2.html"
+          style="background-color: #003366"
+          >Siguiente: Módulo 2 &rarr;</a
+        >
+      </nav>
+
+      <main>
+        <div class="accordion shadow-sm" id="accordionModulo1">
+          <div class="accordion-item border-primary" id="tema1-1">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button fs-5 fw-bold text-primary"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+              >
+                ☑ Tema 1.1. Visión General del Proceso de Ingeniería de Software
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              data-bs-parent="#accordionModulo1"
+            >
+              <div class="accordion-body p-4 bg-white">
+                <p class="fs-6 text-secondary">
+                  La ingeniería de software requiere un enfoque sistemático,
+                  disciplinado y cuantificable. Existen 4 descripciones
+                  fundamentales que no deben saltarse para evitar costos
+                  exponenciales: Requerimientos (R), Especificación (S), Diseño
+                  (D) y Programa (P). Para gestionar el ciclo de vida del
+                  proyecto, se pueden utilizar modelos como el de Cascada o
+                  métodos Ágiles como Scrum.
+                </p>
+
+                <h4 class="text-primary mt-4 mb-3 fs-5 fw-bold">
+                  Material Audiovisual:
+                </h4>
+                <div
+                  class="ratio ratio-16x9 shadow-sm rounded overflow-hidden mb-4"
+                >
+                  <iframe
+                    src="https://www.youtube.com/embed/unupVqLwayA"
+                    title="Video Principal Tema 1.1"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+
+                <div class="alert alert-secondary shadow-sm">
+                  <h5 class="alert-heading fw-bold text-primary">
+                    🔗 Material Adicional:
+                  </h5>
+                  <ul class="mb-0">
+                    <li>
+                      <a
+                        href="https://www.youtube.com/watch?v=tOA0V2btxB0"
+                        target="_blank"
+                        class="alert-link"
+                        >Video complementario 1</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+
+                <h4 class="text-primary mt-4 mb-3 fs-5 fw-bold">
+                  Documento de Lectura:
+                </h4>
+                <iframe
+                  src="Documentos/Ingeniería de Software y Buenas Prácticas de Gestión de Proyectos_Emmanuel_Cetina_G.pdf"
+                  class="w-100 rounded shadow-sm border-0 mb-4"
+                  style="height: 500px"
+                ></iframe>
+
+                <div class="text-center">
+                  <a
+                    href="Documentos/Ingeniería de Software y Buenas Prácticas de Gestión de Proyectos_Emmanuel_Cetina_G.pdf"
+                    class="btn btn-outline-primary fw-bold px-4 py-2"
+                    download
+                    >💾 Descargar PDF: Buenas Prácticas de Gestión</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item border-primary" id="tema1-2">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed fs-5 fw-bold text-primary"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+              >
+                ☑ Tema 1.2. Requerimientos
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionModulo1"
+            >
+              <div class="accordion-body p-4 bg-white">
+                <p class="fs-6 text-secondary">
+                  Los requerimientos son guías que dictan qué hace el sistema y
+                  sus restricciones. Para priorizarlos, se utiliza el método
+                  DINO: Deseables, No implementables, Importantes y
+                  Obligatorios. Es crucial recordar que los requerimientos No
+                  Funcionales (seguridad, desempeño) son siempre Obligatorios.
+                </p>
+
+                <h4 class="text-primary mt-4 mb-3 fs-5 fw-bold">
+                  Material Audiovisual:
+                </h4>
+                <div
+                  class="ratio ratio-16x9 shadow-sm rounded overflow-hidden mb-4"
+                >
+                  <iframe
+                    src="https://www.youtube.com/embed/fLcWpOY3h7k"
+                    title="Video Principal Tema 1.2"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+
+                <div class="alert alert-secondary shadow-sm">
+                  <h5 class="alert-heading fw-bold text-primary">
+                    🔗 Material Adicional:
+                  </h5>
+                  <ul class="mb-0">
+                    <li>
+                      <a
+                        href="AQUI_TU_SEGUNDO_LINK_1_2"
+                        target="_blank"
+                        class="alert-link"
+                        >Video complementario 1</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+
+                <h4 class="text-primary mt-4 mb-3 fs-5 fw-bold">
+                  Documento de Lectura:
+                </h4>
+                <iframe
+                  src="Documentos/Fundamentos y Procesos de la Ingeniería de Requerimientos_Emmanuel_Cetina.pdf"
+                  class="w-100 rounded shadow-sm border-0 mb-4"
+                  style="height: 500px"
+                ></iframe>
+
+                <div class="text-center">
+                  <a
+                    href="Documentos/Fundamentos y Procesos de la Ingeniería de Requerimientos_Emmanuel_Cetina.pdf"
+                    class="btn btn-outline-primary fw-bold px-4 py-2"
+                    download
+                    >💾 Descargar PDF: Ingeniería de Requerimientos</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item border-primary" id="tema1-3">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed fs-5 fw-bold text-primary"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+              >
+                ☑ Tema 1.3. Arquitectura
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionModulo1"
+            >
+              <div class="accordion-body p-4 bg-white">
+                <p class="fs-6 text-secondary">
+                  La arquitectura vive en la etapa de Diseño, ubicándose entre
+                  la Especificación y el Código. Se divide en tres niveles de
+                  estructura: Estilo Arquitectónico, Patrones de Diseño y Diseño
+                  de Componentes. El objetivo supremo no es solo el orden, sino
+                  permitir modificar el sistema a bajo costo en el futuro.
+                </p>
+
+                <h4 class="text-primary mt-4 mb-3 fs-5 fw-bold">
+                  Material Audiovisual:
+                </h4>
+                <div
+                  class="ratio ratio-16x9 shadow-sm rounded overflow-hidden mb-4"
+                >
+                  <iframe
+                    src="https://www.youtube.com/embed/n6XvfUG4QBQ"
+                    title="Video Principal Tema 1.3"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+
+                <div class="alert alert-secondary shadow-sm">
+                  <h5 class="alert-heading fw-bold text-primary">
+                    🔗 Material Adicional:
+                  </h5>
+                  <ul class="mb-0">
+                    <li>
+                      <a
+                        href="AQUI_TU_SEGUNDO_LINK_1_3"
+                        target="_blank"
+                        class="alert-link"
+                        >Video complementario 1</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+
+                <h4 class="text-primary mt-4 mb-3 fs-5 fw-bold">
+                  Documento de Lectura:
+                </h4>
+                <iframe
+                  src="Documentos/Fundamentos de Arquitectura y Diseño de Software_Emmanuel_Cetina.pdf"
+                  class="w-100 rounded shadow-sm border-0 mb-4"
+                  style="height: 500px"
+                ></iframe>
+
+                <div class="text-center">
+                  <a
+                    href="Documentos/Fundamentos de Arquitectura y Diseño de Software_Emmanuel_Cetina.pdf"
+                    class="btn btn-outline-primary fw-bold px-4 py-2"
+                    download
+                    >💾 Descargar PDF: Arquitectura de Software</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item border-primary" id="tema1-4">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed fs-5 fw-bold text-primary"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFour"
+              >
+                ☑ Tema 1.4. Patrones de diseño
+              </button>
+            </h2>
+            <div
+              id="collapseFour"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionModulo1"
+            >
+              <div class="accordion-body p-4 bg-white">
+                <p class="fs-6 text-secondary">
+                  Un patrón de diseño es una solución probada a un problema
+                  recurrente; sirve como un molde universal adaptable a
+                  cualquier lenguaje. Un ejemplo destacado es el patrón
+                  Singleton, cuyo objetivo es garantizar que una clase tenga una
+                  única instancia en toda la aplicación.
+                </p>
+
+                <h4 class="text-primary mt-4 mb-3 fs-5 fw-bold">
+                  Ejemplo de Código (Singleton en Java):
+                </h4>
+                <div
+                  class="bg-dark text-light p-3 rounded shadow-sm overflow-auto mb-4"
+                  style="font-family: monospace; font-size: 0.95rem"
+                >
+                  <pre class="m-0"><code>public class Conexion {
+    private static Conexion instancia;
+    
+    private Conexion() {}
+    
+    public static Conexion getInstancia() {
+        if(instancia == null) {
+            instancia = new Conexion();
+        }
+        return instancia;
+    }
+}</code></pre>
+                </div>
+
+                <h4 class="text-primary mt-4 mb-3 fs-5 fw-bold">
+                  Material Audiovisual:
+                </h4>
+                <div
+                  class="ratio ratio-16x9 shadow-sm rounded overflow-hidden mb-4"
+                >
+                  <iframe
+                    src="https://www.youtube.com/embed/9QhIVc2_wkk"
+                    title="Video Principal Tema 1.4"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+
+                <div class="alert alert-secondary shadow-sm">
+                  <h5 class="alert-heading fw-bold text-primary">
+                    🔗 Material Adicional:
+                  </h5>
+                  <ul class="mb-0">
+                    <li>
+                      <a
+                        href="https://www.youtube.com/watch?v=G4mFD16PGMg&t=2672s"
+                        target="_blank"
+                        class="alert-link"
+                        >Video complementario 1</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.youtube.com/watch?v=gocJeOHtj9w"
+                        target="_blank"
+                        class="alert-link"
+                        >Video complementario 2</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.youtube.com/watch?v=I6HkKii8jlM"
+                        target="_blank"
+                        class="alert-link"
+                        >Video complementario 3</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+
+                <h4 class="text-primary mt-4 mb-3 fs-5 fw-bold">
+                  Documento de Lectura:
+                </h4>
+                <iframe
+                  src="Documentos/Patrones de diseño_Emmanuel_Cetina.pdf"
+                  class="w-100 rounded shadow-sm border-0 mb-4"
+                  style="height: 500px"
+                ></iframe>
+
+                <div class="text-center">
+                  <a
+                    href="Documentos/Patrones de diseño_Emmanuel_Cetina.pdf"
+                    class="btn btn-outline-primary fw-bold px-4 py-2"
+                    download
+                    >💾 Descargar PDF: Patrones de Diseño</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer class="pt-4 my-md-5 pt-md-5 border-top text-center">
+        <div class="mb-3">
+          <h3 class="fw-bold text-primary">
+            Programa Células Plenum - Módulo 1
+          </h3>
+          <p class="fw-semibold text-dark">
+            Plenumsoft Academy | Tecnológico Nacional de México
+          </p>
+        </div>
+        <p class="text-muted small">
+          &copy; 2026 Todos los derechos reservados
+        </p>
+      </footer>
+    </div>
+
+    <a
+      href="#"
+      class="scroll-top-btn shadow-lg d-flex justify-content-center align-items-center text-decoration-none"
+      aria-label="Ir al inicio de la página"
+      >⬆️</a
+    >
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

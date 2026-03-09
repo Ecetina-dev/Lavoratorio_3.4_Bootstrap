@@ -1,0 +1,827 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Módulo 2 - Fundamentos de Programación</title>
+
+    <meta
+      name="description"
+      content="Módulo 2 del Programa Células Plenum. Aprende Java, MySQL, POO y diseño de APIs."
+    />
+    <meta name="theme-color" content="#003366" />
+    <meta property="og:title" content="Módulo 2 - Células Plenum" />
+    <meta
+      property="og:description"
+      content="Aprende Java, MySQL y bases de datos."
+    />
+    <meta property="og:image" content="img/logo.de52c6b55577.png" />
+
+    <link rel="icon" href="img/favicon.png" />
+
+    <link rel="stylesheet" href="css/custom.css" />
+  </head>
+  <body class="bg-light">
+    <div class="container py-4">
+      <header
+        class="d-flex flex-column flex-md-row justify-content-between align-items-center pb-3 mb-4 border-bottom"
+      >
+        <a href="index.html" class="text-decoration-none">
+          <img
+            src="img/logo.de52c6b55577.png"
+            alt="Células Plenum"
+            height="80"
+            class="mb-3 mb-md-0 rounded"
+          />
+        </a>
+
+        <div class="text-center">
+          <h1 class="fw-bold fs-2 mb-1 text-primary">
+            Módulo 2. Fundamentos de Programación
+          </h1>
+        </div>
+
+        <div class="d-flex gap-3 mt-3 mt-md-0">
+          <img
+            src="img/Tecnologico_Nacional_de_Mexico.webp"
+            alt="TecNM"
+            height="80"
+            class="rounded shadow-sm"
+          />
+          <img
+            src="img/itssy.jpg"
+            alt="ITSSY"
+            height="80"
+            class="rounded shadow-sm"
+          />
+        </div>
+      </header>
+
+      <nav
+        class="nav nav-pills justify-content-center sticky-top bg-white bg-opacity-75 shadow-sm py-3 mb-5 rounded"
+        style="backdrop-filter: blur(10px); z-index: 1020"
+      >
+        <a class="nav-link active shadow-sm ms-2" href="modulo1.html" style="background-color: #003366"
+          >&larr; Anterior: Módulo 1</a
+        >
+        <a class="nav-link text-dark fw-semibold" href="index.html"
+          >🏠 Inicio</a
+        >
+        <a class="nav-link text-dark" href="#tema2-1">2.1 BD</a>
+        <a class="nav-link text-dark" href="#tema2-2">2.2 Normalización</a>
+        <a class="nav-link text-dark" href="#tema2-3">2.3 SQL</a>
+        <a class="nav-link text-dark" href="#tema2-4">2.4 Triggers</a>
+        <a class="nav-link text-dark" href="#tema2-5">2.5 POO</a>
+        <a class="nav-link text-dark" href="#tema2-6">2.6 Java & MySQL</a>
+        <a class="nav-link text-dark" href="#tema2-7">2.7 API</a>
+        <a
+          class="nav-link active shadow-sm ms-2"
+          href="modulo3.html"
+          style="background-color: #003366"
+          >Siguiente: Módulo 3 &rarr;</a
+        >
+      </nav>
+
+      <main>
+        <div class="accordion shadow-sm" id="accordionModulo2">
+          <div class="accordion-item border-primary" id="tema2-1">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button fs-5 fw-bold text-primary"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse2_1"
+                aria-expanded="true"
+              >
+                ☑ Tema 2.1. Bases de Datos Relacionales
+              </button>
+            </h2>
+            <div
+              id="collapse2_1"
+              class="accordion-collapse collapse show"
+              data-bs-parent="#accordionModulo2"
+            >
+              <div class="accordion-body p-4 bg-white">
+                <p class="fs-6 text-secondary">
+                  Las bases de datos relacionales organizan la información en
+                  tablas que se relacionan entre sí mediante identificadores
+                  únicos llamados claves primarias y claves foráneas. Este
+                  modelo garantiza la integridad de los datos y facilita
+                  consultas complejas.
+                </p>
+
+                <h4 class="text-primary mt-4 mb-3 fs-5 fw-bold">
+                  Material Audiovisual:
+                </h4>
+                <div
+                  class="ratio ratio-16x9 shadow-sm rounded overflow-hidden mb-4"
+                >
+                  <iframe
+                    src="https://www.youtube.com/embed/videoseries?list=PLGC1kwoNMbVZG2QaDnd6ME_lqNF4GF4S4"
+                    title="Video Principal Tema 2.1"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+
+                <div class="alert alert-secondary shadow-sm">
+                  <h5 class="alert-heading fw-bold text-primary">
+                    🔗 Material Adicional:
+                  </h5>
+                  <ul class="mb-0">
+                    <li>
+                      <a
+                        href="https://youtube.com/playlist?list=PL3y8v30wQ1s9e6TS_fGGhhuVFOa3w-6G2"
+                        target="_blank"
+                        class="alert-link"
+                        >Acceder a lista de reproducción 2</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://youtube.com/playlist?list=PLi_UneHMpzONsjIf0xl-02eQIAH7T2_t8"
+                        target="_blank"
+                        class="alert-link"
+                        >Acceder a lista de reproducción 3</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://youtube.com/playlist?list=PLi_UneHMpzON3xmBc6_JfFRz7BMFk14Kl"
+                        target="_blank"
+                        class="alert-link"
+                        >Acceder a lista de reproducción 4</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+
+                <h4 class="text-primary mt-4 mb-3 fs-5 fw-bold">
+                  Documento de Lectura:
+                </h4>
+                <iframe
+                  src="Documentos/2.1_Bases de Datos_Emmanuel_Cetina.pdf"
+                  class="w-100 rounded shadow-sm border-0 mb-4"
+                  style="height: 500px"
+                ></iframe>
+
+                <div class="text-center">
+                  <a
+                    href="Documentos/2.1_Bases de Datos_Emmanuel_Cetina.pdf"
+                    class="btn btn-outline-primary fw-bold px-4 py-2"
+                    download
+                    >💾 Descargar PDF: Bases de Datos Relacionales</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item border-primary" id="tema2-2">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed fs-5 fw-bold text-primary"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse2_2"
+              >
+                ☑ Tema 2.2. Normalización
+              </button>
+            </h2>
+            <div
+              id="collapse2_2"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionModulo2"
+            >
+              <div class="accordion-body p-4 bg-white">
+                <p class="fs-6 text-secondary">
+                  La normalización es el proceso de organizar los datos en una
+                  base de datos para reducir la redundancia y mejorar la
+                  integridad de la información.
+                </p>
+
+                <h4 class="text-primary mt-4 mb-3 fs-5 fw-bold">
+                  Material Audiovisual:
+                </h4>
+                <div
+                  class="ratio ratio-16x9 shadow-sm rounded overflow-hidden mb-4"
+                >
+                  <iframe
+                    src="https://www.youtube.com/embed/JRCjSUbYKxI"
+                    title="Video Principal Tema 2.2"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+
+                <div class="alert alert-secondary shadow-sm">
+                  <h5 class="alert-heading fw-bold text-primary">
+                    🔗 Material Adicional:
+                  </h5>
+                  <ul class="mb-0">
+                    <li>
+                      <a
+                        href="https://www.youtube.com/watch?v=JZmSYf5J0C8&t=269s"
+                        target="_blank"
+                        class="alert-link"
+                        >Video complementario 1</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://youtube.com/playlist?list=PLE19WVM4rff1ion43QTNdbbejTKNhYs8x"
+                        target="_blank"
+                        class="alert-link"
+                        >Normalización de base de datos (Playlist)</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+
+                <h4 class="text-primary mt-4 mb-3 fs-5 fw-bold">
+                  Documento de Lectura:
+                </h4>
+                <iframe
+                  src="Documentos/2.2_Normalización_Emmanuel_Cetina.pdf"
+                  class="w-100 rounded shadow-sm border-0 mb-4"
+                  style="height: 500px"
+                ></iframe>
+
+                <div class="text-center">
+                  <a
+                    href="Documentos/2.2_Normalización_Emmanuel_Cetina.pdf"
+                    class="btn btn-outline-primary fw-bold px-4 py-2"
+                    download
+                    >💾 Descargar PDF: Normalización de BD</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item border-primary" id="tema2-3">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed fs-5 fw-bold text-primary"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse2_3"
+              >
+                ☑ Tema 2.3. SQL
+              </button>
+            </h2>
+            <div
+              id="collapse2_3"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionModulo2"
+            >
+              <div class="accordion-body p-4 bg-white">
+                <p class="fs-6 text-secondary">
+                  SQL es el lenguaje estándar utilizado para comunicarse con
+                  bases de datos relacionales. Permite realizar operaciones
+                  CRUD, además de crear estructuras de tablas.
+                </p>
+
+                <h4 class="text-primary mt-4 mb-3 fs-5 fw-bold">
+                  Material Audiovisual:
+                </h4>
+                <div
+                  class="ratio ratio-16x9 shadow-sm rounded overflow-hidden mb-4"
+                >
+                  <iframe
+                    src="https://www.youtube.com/embed/HlRhFDY1Bmg"
+                    title="Video Principal Tema 2.3"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+
+                <div class="alert alert-secondary shadow-sm">
+                  <h5 class="alert-heading fw-bold text-primary">
+                    🔗 Material Adicional:
+                  </h5>
+                  <ul class="mb-0">
+                    <li>
+                      <a
+                        href="https://youtube.com/playlist?list=PLU8oAlHdN5Bmx-LChV4K3MbHrpZKefNwn"
+                        target="_blank"
+                        class="alert-link"
+                        >Acceder a lista de reproducción 1</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.youtube.com/playlist?list=PLTt_5WPJqE-l90KDcxe1njAvDqwhrvbLV"
+                        target="_blank"
+                        class="alert-link"
+                        >Acceder a lista de reproducción 2</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+
+                <h4 class="text-primary mt-4 mb-3 fs-5 fw-bold">
+                  Documento de Lectura:
+                </h4>
+                <iframe
+                  src="Documentos/Laboratorio del tema 2.3_Emmanuel_Cetina.pdf"
+                  class="w-100 rounded shadow-sm border-0 mb-4"
+                  style="height: 500px"
+                ></iframe>
+
+                <div class="text-center">
+                  <a
+                    href="Documentos/Laboratorio del tema 2.3_Emmanuel_Cetina.pdf"
+                    class="btn btn-outline-primary fw-bold px-4 py-2"
+                    download
+                    >💾 Descargar PDF: Laboratorio SQL</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item border-primary" id="tema2-4">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed fs-5 fw-bold text-primary"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse2_4"
+              >
+                ☑ Tema 2.4. Triggers
+              </button>
+            </h2>
+            <div
+              id="collapse2_4"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionModulo2"
+            >
+              <div class="accordion-body p-4 bg-white">
+                <p class="fs-6 text-secondary">
+                  Un trigger o disparador es un conjunto de instrucciones SQL
+                  que se ejecutan automáticamente en respuesta a un evento
+                  específico en una tabla o vista particular.
+                </p>
+
+                <h4 class="text-primary mt-4 mb-3 fs-5 fw-bold">
+                  Material Audiovisual:
+                </h4>
+                <div
+                  class="ratio ratio-16x9 shadow-sm rounded overflow-hidden mb-4"
+                >
+                  <iframe
+                    src="https://www.youtube.com/embed/Hb4wkSClKec"
+                    title="Video Principal Tema 2.4"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+
+                <div class="alert alert-secondary shadow-sm">
+                  <h5 class="alert-heading fw-bold text-primary">
+                    🔗 Material Adicional:
+                  </h5>
+                  <ul class="mb-0">
+                    <li>
+                      <a
+                        href="https://www.youtube.com/watch?v=DRon_SFQ5IY"
+                        target="_blank"
+                        class="alert-link"
+                        >Video complementario 1</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://dev.mysql.com/doc/refman/8.0/en/trigger-syntax.html"
+                        target="_blank"
+                        class="alert-link"
+                        >Trigger Syntax and Examples (MySQL)</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+
+                <h4 class="text-primary mt-4 mb-3 fs-5 fw-bold">
+                  Documento de Lectura:
+                </h4>
+                <iframe
+                  src="Documentos/Laboratorio del tema 2.4_Emmanuel_Cetina.pdf"
+                  class="w-100 rounded shadow-sm border-0 mb-4"
+                  style="height: 500px"
+                ></iframe>
+
+                <div class="text-center">
+                  <a
+                    href="Documentos/Laboratorio del tema 2.4_Emmanuel_Cetina.pdf"
+                    class="btn btn-outline-primary fw-bold px-4 py-2"
+                    download
+                    >💾 Descargar PDF: Implementación de Triggers</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item border-primary" id="tema2-5">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed fs-5 fw-bold text-primary"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse2_5"
+              >
+                ☑ Tema 2.5. Programación Orientada a Objetos
+              </button>
+            </h2>
+            <div
+              id="collapse2_5"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionModulo2"
+            >
+              <div class="accordion-body p-4 bg-white">
+                <p class="fs-6 text-secondary">
+                  La Programación Orientada a Objetos (POO) es un paradigma de
+                  diseño de software que modela conceptos del mundo real
+                  mediante "clases" y "objetos". Se basa en cuatro pilares
+                  fundamentales: encapsulamiento, abstracción, herencia y
+                  polimorfismo.
+                </p>
+
+                <h4 class="text-primary mt-4 mb-3 fs-5 fw-bold">
+                  Material Audiovisual:
+                </h4>
+                <div
+                  class="ratio ratio-16x9 shadow-sm rounded overflow-hidden mb-4"
+                >
+                  <iframe
+                    src="https://www.youtube.com/embed/AmS2-9KEeS0"
+                    title="Video Principal Tema 2.5"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+
+                <div class="alert alert-secondary shadow-sm">
+                  <h5 class="alert-heading fw-bold text-primary">
+                    🔗 Material Adicional:
+                  </h5>
+                  <ul class="mb-0">
+                    <li>
+                      <a
+                        href="https://www.youtube.com/watch?v=91iQAWCiiCo"
+                        target="_blank"
+                        class="alert-link"
+                        >Video complementario 1</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://desarrolloweb.com/articulos/499.php"
+                        target="_blank"
+                        class="alert-link"
+                        >Artículo: Definición POO y paradigmas</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+
+                <h4 class="text-primary mt-4 mb-3 fs-5 fw-bold">
+                  Documento de Lectura:
+                </h4>
+                <iframe
+                  src="Documentos/2.5_Programación orientada a objetos_Emmanuel_Cetina.pdf"
+                  class="w-100 rounded shadow-sm border-0 mb-4"
+                  style="height: 500px"
+                ></iframe>
+
+                <div class="text-center">
+                  <a
+                    href="Documentos/2.5_Programación orientada a objetos_Emmanuel_Cetina.pdf"
+                    class="btn btn-outline-primary fw-bold px-4 py-2"
+                    download
+                    >💾 Descargar PDF: POO</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item border-primary" id="tema2-6">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed fs-5 fw-bold text-primary"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse2_6"
+              >
+                ☑ Tema 2.6. Práctica de Java &amp; MySQL
+              </button>
+            </h2>
+            <div
+              id="collapse2_6"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionModulo2"
+            >
+              <div class="accordion-body p-4 bg-white">
+                <p class="fs-6 text-secondary">
+                  Este tema integra los conocimientos de POO y bases de datos
+                  mediante la construcción de un sistema real. Se implementa la
+                  conexión directa desde el código Java hacia el motor de MySQL
+                  utilizando controladores JDBC. Se aplica el patrón de
+                  arquitectura MVC para separar la interfaz gráfica, la lógica
+                  de negocio y el acceso a los datos, culminando en un sistema
+                  con operaciones CRUD completas.
+                </p>
+
+                <h4 class="text-primary mt-4 mb-3 fs-5 fw-bold">
+                  Material Audiovisual:
+                </h4>
+                <div
+                  class="ratio ratio-16x9 shadow-sm rounded overflow-hidden mb-4"
+                >
+                  <iframe
+                    src="https://www.youtube.com/embed/k0SMuHlmATs"
+                    title="Video Principal Tema 2.6"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+
+                <div class="alert alert-secondary shadow-sm mb-4">
+                  <h5 class="alert-heading fw-bold text-primary">
+                    🔗 Material Adicional:
+                  </h5>
+                  <ul class="mb-0">
+                    <li>
+                      <a
+                        href="https://www.youtube.com/watch?v=Wpeym1_lmPo"
+                        target="_blank"
+                        class="alert-link"
+                        >Video complementario 1</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://youtube.com/playlist?list=PL-Mlm_HYjCo9vojnWbPTs6nV51J8WV_O5"
+                        target="_blank"
+                        class="alert-link"
+                        >Lista de reproducción 1</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.youtube.com/playlist?list=PL-Mlm_HYjCo_uketceEXL4CuoPf9t38FZ"
+                        target="_blank"
+                        class="alert-link"
+                        >Lista de reproducción 2</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.udemy.com/course/java-basico-desde-cero-gratis/"
+                        target="_blank"
+                        class="alert-link"
+                        >Curso Udemy: Java básico</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.w3schools.com/java/default.asp"
+                        target="_blank"
+                        class="alert-link"
+                        >Tutorial de Java en W3Schools</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.youtube.com/watch?v=jHeRQVDcWgA"
+                        target="_blank"
+                        class="alert-link"
+                        >Video complementario 2</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.youtube.com/watch?v=QHIWkwxs0AI"
+                        target="_blank"
+                        class="alert-link"
+                        >Video complementario 3</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.youtube.com/watch?v=U709qY6S9rA"
+                        target="_blank"
+                        class="alert-link"
+                        >Video complementario 4</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+
+                <h4 class="text-primary mt-4 mb-3 fs-5 fw-bold">
+                  Imágenes de evidencia de práctica de laboratorio:
+                </h4>
+
+                <div
+                  id="carouselEvidencias"
+                  class="carousel carousel-dark slide shadow-sm rounded overflow-hidden mb-4 border"
+                  data-bs-ride="carousel"
+                >
+                  <div class="carousel-indicators">
+                    <button
+                      type="button"
+                      data-bs-target="#carouselEvidencias"
+                      data-bs-slide-to="0"
+                      class="active"
+                      aria-current="true"
+                      aria-label="Slide 1"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#carouselEvidencias"
+                      data-bs-slide-to="1"
+                      aria-label="Slide 2"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#carouselEvidencias"
+                      data-bs-slide-to="2"
+                      aria-label="Slide 3"
+                    ></button>
+                  </div>
+
+                  <div class="carousel-inner bg-light">
+                    <div class="carousel-item active">
+                      <img
+                        src="img/capturas/Screenshot 2026-02-19 124544.png"
+                        class="d-block w-100"
+                        alt="Evidencia 1"
+                        style="object-fit: contain; max-height: 500px"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="img/capturas/Screenshot 2026-02-19 124828.png"
+                        class="d-block w-100"
+                        alt="Evidencia 2"
+                        style="object-fit: contain; max-height: 500px"
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="img/capturas/Screenshot 2026-02-19 125505.png"
+                        class="d-block w-100"
+                        alt="Evidencia 3"
+                        style="object-fit: contain; max-height: 500px"
+                      />
+                    </div>
+                  </div>
+
+                  <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselEvidencias"
+                    data-bs-slide="prev"
+                  >
+                    <span
+                      class="carousel-control-prev-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Anterior</span>
+                  </button>
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselEvidencias"
+                    data-bs-slide="next"
+                  >
+                    <span
+                      class="carousel-control-next-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Siguiente</span>
+                  </button>
+                </div>
+                <h4 class="text-primary mt-4 mb-3 fs-5 fw-bold">
+                  Documento de Lectura:
+                </h4>
+                <iframe
+                  src="Documentos/Laboratorio del tema 2.6_Emmanuel_Cetina.pdf"
+                  class="w-100 rounded shadow-sm border-0 mb-4"
+                  style="height: 500px"
+                ></iframe>
+
+                <div class="text-center">
+                  <a
+                    href="Documentos/Laboratorio del tema 2.6_Emmanuel_Cetina.pdf"
+                    class="btn btn-outline-primary fw-bold px-4 py-2"
+                    download
+                    >💾 Descargar PDF: Guía de Práctica Java & MySQL</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item border-primary" id="tema2-7">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed fs-5 fw-bold text-primary"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse2_7"
+              >
+                ☑ Tema 2.7. API
+              </button>
+            </h2>
+            <div
+              id="collapse2_7"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionModulo2"
+            >
+              <div class="accordion-body p-4 bg-white">
+                <p class="fs-6 text-secondary">
+                  Una API actúa como un puente de comunicación que permite que
+                  diferentes sistemas de software interactúen entre sí. En el
+                  contexto web, las APIs RESTful exponen los datos del backend
+                  para que aplicaciones frontend o móviles puedan consumirlos de
+                  forma segura.
+                </p>
+
+                <h4 class="text-primary mt-4 mb-3 fs-5 fw-bold">
+                  Material Audiovisual:
+                </h4>
+                <div
+                  class="ratio ratio-16x9 shadow-sm rounded overflow-hidden mb-4"
+                >
+                  <iframe
+                    src="https://www.youtube.com/embed/mawPztD3zl0"
+                    title="Video Principal Tema 2.7"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+
+                <div class="alert alert-secondary shadow-sm">
+                  <h5 class="alert-heading fw-bold text-primary">
+                    🔗 Material Adicional:
+                  </h5>
+                  <ul class="mb-0">
+                    <li>
+                      <a
+                        href="AQUI_TU_SEGUNDO_LINK_2_7"
+                        target="_blank"
+                        class="alert-link"
+                        >Acceder al material adicional 1</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+
+                <h4 class="text-primary mt-4 mb-3 fs-5 fw-bold">
+                  Documento de Lectura:
+                </h4>
+                <iframe
+                  src="Documentos/2.7_APIs_Arquitectura_Web_Emmanuel_Cetina.pdf"
+                  class="w-100 rounded shadow-sm border-0 mb-4"
+                  style="height: 500px"
+                ></iframe>
+
+                <div class="text-center">
+                  <a
+                    href="Documentos/2.7_APIs_Arquitectura_Web_Emmanuel_Cetina.pdf"
+                    class="btn btn-outline-primary fw-bold px-4 py-2"
+                    download
+                    >💾 Descargar PDF: Fundamentos de APIs</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer class="pt-4 my-md-5 pt-md-5 border-top text-center">
+        <div class="mb-3">
+          <h3 class="fw-bold text-primary">
+            Programa Células Plenum - Módulo 2
+          </h3>
+          <p class="fw-semibold text-dark">
+            Plenumsoft Academy | Tecnológico Nacional de México
+          </p>
+        </div>
+        <p class="text-muted small">
+          &copy; 2026 Todos los derechos reservados
+        </p>
+      </footer>
+    </div>
+
+    <a
+      href="#"
+      class="scroll-top-btn shadow-lg d-flex justify-content-center align-items-center text-decoration-none"
+      aria-label="Ir al inicio de la página"
+      >⬆️</a
+    >
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
